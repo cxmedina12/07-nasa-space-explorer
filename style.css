@@ -108,6 +108,41 @@ button:hover {
   }
 }
 
+/* Space Facts Section */
+.space-fact {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin: 20px auto 30px auto;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fact-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.space-fact h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4a9eff;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.space-fact p {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* Gallery flex container */
 .gallery {
   display: flex;
@@ -153,6 +188,11 @@ button:hover {
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover .space-image {
+  transform: scale(1.05);
 }
 
 .image-title {
@@ -190,6 +230,11 @@ button:hover {
   margin-bottom: 15px;
   font-size: 1.1rem;
   color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover .video-placeholder {
+  transform: scale(1.05);
 }
 
 /* Placeholder content */

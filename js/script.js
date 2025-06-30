@@ -10,6 +10,33 @@ const endInput = document.getElementById('endDate');
 const getImagesButton = document.getElementById('getImages');
 const gallery = document.getElementById('gallery');
 
+// Array of fun space facts
+const spaceFacts = [
+  "One day on Venus is longer than its year! Venus takes 243 Earth days to rotate once, but only 225 Earth days to orbit the Sun.",
+  "Jupiter's Great Red Spot is a storm that has been raging for over 300 years and is bigger than Earth!",
+  "A single teaspoon of neutron star material would weigh about 6 billion tons on Earth.",
+  "There are more stars in the universe than grains of sand on all the beaches on Earth.",
+  "Saturn's moon Titan has lakes and rivers made of liquid methane instead of water.",
+  "The footprints left by Apollo astronauts on the Moon will last for millions of years because there's no wind to blow them away.",
+  "The International Space Station travels at 17,500 mph and orbits Earth every 90 minutes.",
+  "Mars has the largest volcano in the solar system - Olympus Mons is nearly 3 times taller than Mount Everest!",
+  "The Milky Way galaxy is on a collision course with the Andromeda galaxy, but don't worry - it won't happen for 4.5 billion years!",
+  "Space is completely silent because sound needs air to travel, and there's no air in the vacuum of space."
+];
+
+// Function to display a random space fact
+function displayRandomFact() {
+  // Get a random index from the spaceFacts array
+  const randomIndex = Math.floor(Math.random() * spaceFacts.length);
+  
+  // Get the fact element and display the random fact
+  const factElement = document.getElementById('randomFact');
+  factElement.textContent = spaceFacts[randomIndex];
+}
+
+// Display a random fact when the page loads
+displayRandomFact();
+
 // Call the setupDateInputs function from dateRange.js
 // This sets up the date pickers to:
 // - Default to a range of 9 days (from 9 days ago to today)
