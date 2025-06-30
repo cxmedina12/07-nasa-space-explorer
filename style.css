@@ -55,6 +55,15 @@ h1 {
   padding: 0 20px;
 }
 
+/* Date labels */
+.date-label {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
 /* Inputs and buttons */
 input[type="date"],
 button {
@@ -100,6 +109,13 @@ button:hover {
   .filters {
     flex-direction: row;
     padding: 0;
+    align-items: end;
+  }
+  
+  .date-label {
+    margin-bottom: 0;
+    margin-right: 8px;
+    white-space: nowrap;
   }
   
   input[type="date"],
@@ -126,7 +142,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
-.space-fact h3 {
+.space-fact h2 {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
